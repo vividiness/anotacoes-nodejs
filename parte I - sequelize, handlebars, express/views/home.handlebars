@@ -1,0 +1,12 @@
+<h1>Lista de posts</h1>
+
+{{#each posts}} <!-- para cada postagens, imprimir o titulo e o conteudo + hr, quando recebemos os posts, é em array.-->
+
+<small> {{createdAt}} </small>
+<h1> {{titulo}} </h1>
+<p> {{conteudo}} </p>
+
+<a href= "/deletar/{{id}}"> <button> Deletar </button> </a>
+<hr>
+
+{{/each}}

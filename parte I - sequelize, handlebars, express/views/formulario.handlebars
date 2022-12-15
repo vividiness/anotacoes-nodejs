@@ -1,0 +1,21 @@
+<!-- não precisa abrir as outras tags do html pois já foram abertas no arquivo main.handlebars.-->
+
+<!--form method="" é a forma de como os dados vao ser enviados pro backend
+
+- get envia os dados pela URL, a gente consegue ver o que eu digitei na URL
+    - só se pode acessar rotas do tipo 'get' pela URL, e não tipo POST.
+
+- post não passa pela URL ¯\_(ツ)_/¯, é mais seguro.
+
+form action="" é a rota pra onde vai ser mandado os dados.
+-->
+
+<form action="/add" method="POST"> 
+    <p>Título: </p>
+    <input type="text" name="titulo">
+
+    <p>Conteúdo: </p>
+    <textarea name="conteudo"></textarea>
+    
+    <br><button type='submit'>Cadastrar postagem </button>
+</form>
